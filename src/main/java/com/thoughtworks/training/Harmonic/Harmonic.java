@@ -8,17 +8,18 @@ public class Harmonic {
     }
 
     public double get() {
+        double sum=0;
         if (value == 1) {
-            return 1;
+            sum +=1;
         }
 
         if (value == 2) {
-            return 1.0 + 0.5;
+            sum +=0.5;
         }
 
         if (value == 3) {
-            return 1.0 + 0.5 + 0.33;
+            sum +=0.33;
         }
-        return -1;
+        return sum;
     }
 }
