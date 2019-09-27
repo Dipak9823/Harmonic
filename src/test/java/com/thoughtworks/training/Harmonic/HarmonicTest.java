@@ -8,13 +8,25 @@ public class HarmonicTest {
 
     @Test
     void givenValueOne_WhenGet_ThenShouldBeReturnHarmonicValueOne() {
-        Harmonic harmonic =new Harmonic(1);
-        Assertions.assertEquals(1,harmonic.get());
+
+        Harmonic harmonic = new Harmonic(1);
+
+        Assertions.assertEquals(1, harmonic.get());
     }
 
     @Test
-    void givenValueTwo_WhenGet_ThenShouldBeReturnHarmonicZeroPointFive() {
-        Harmonic harmonic=new Harmonic(2);
-        Assertions.assertEquals(0.5,harmonic.get());
+    void givenValueTwo_WhenGet_ThenShouldBeReturnHarmonicValueZeroPointFive() {
+
+        Harmonic harmonic = new Harmonic(2);
+
+        Assertions.assertEquals(1.5, harmonic.get());
+    }
+
+    @Test
+    void givenValueThree_WhenGet_ThenShouldBeReturnHarmonicValueOnePoinEightThree() {
+
+        Harmonic harmonic = new Harmonic(3);
+
+        Assertions.assertEquals(1.83, harmonic.get());
     }
 }

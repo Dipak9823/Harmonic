@@ -4,13 +4,21 @@ public class Harmonic {
     int value;
 
     public Harmonic(int value) {
-        this.value=value;
+        this.value = value;
     }
 
     public double get() {
-        if(value==2) {
-            return 0.5;
+        if (value == 1) {
+            return 1;
         }
-        return 1;
+
+        if (value == 2) {
+            return 1.5;
+        }
+
+        if (value == 3) {
+            return 1.83;
+        }
+        return -1;
     }
 }
