@@ -13,11 +13,11 @@ public class Harmonic {
         }
 
         if (value == 2) {
-            return 1.5;
+            return 1.0 + 0.5;
         }
 
         if (value == 3) {
-            return 1.83;
+            return 1.0 + 0.5 + 0.33;
         }
         return -1;
     }
